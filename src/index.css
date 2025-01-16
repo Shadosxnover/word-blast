@@ -1,0 +1,38 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+  --color-primary: #8B5CF6;
+  --color-secondary: #5B21B6;
+  --color-accent: #C4B5FD;
+  --color-background: #1F2937;
+  --color-text: #F3F4F6;
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(5px); }
+  50% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+  100% { transform: translateX(0); }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
